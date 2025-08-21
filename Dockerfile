@@ -47,3 +47,5 @@ ENV NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
 # Make n8n listen on Railway's dynamic port
 ENV N8N_PORT=${PORT}
 ENV N8N_HOST=0.0.0.0
+CMD ["n8n", "start", "--port", "${PORT}"]
+
